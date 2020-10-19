@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1.1"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/pagePrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/triangle"
+        android:rotation="180"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/pageLeft"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:maxLines="1"
+        android:background="@drawable/circle"
+        style="@style/AppTheme.DefaultTextView"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:textSize="@dimen/text_normal"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1.1"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/pageCenter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:maxLines="1"
+        style="@style/AppTheme.DefaultTextView"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@drawable/circle_white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/text_normal"
+        android:text="2" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1.1"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/pageRight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:maxLines="1"
+        style="@style/AppTheme.DefaultTextView"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@drawable/circle_white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/text_normal"
+        android:text="3" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/pageNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/triangle"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1.1"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
